@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #000000;
+  background: #ffffff;
+  font-family: "ProximaNovaRegular";
+  font-family: var(--font-inter);
+}
+
+img {
+  max-width: unset !important;
+}
+
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url("/fonts/helvetica-roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("/fonts/proximanova-regular.otf") format("opentype");
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
